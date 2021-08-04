@@ -1,0 +1,81 @@
+.form__img {
+    @include flex(column, center);
+    img {
+        height: auto;
+        width: 95%;
+    }
+}
+
+.form {
+    .form__title h1 {
+        @include title-font(3rem, 1.1rem);
+        color:$heading-color;
+        padding: 1.5rem;
+        margin: 2rem;
+    }
+    .form__subtitle {
+        @include title-font(1.5rem, .3rem);
+        text-align: start;
+        color:$heading-color;
+        margin: 1.5rem 0.5rem;
+    }
+    .form__data {
+        @include main-font(1.5rem);
+        color:$text-color;
+        margin: .5rem 0.5rem;
+        text-align: center;
+    }
+    .form__radio {
+        color:black;
+        &:active {color:red;}
+    }
+    .form__info {
+        input {
+            width: 20rem;
+            height: 2.2rem;
+            background-color:$background-color2;
+            border: 0.1rem solid $primary-color;
+        }
+    }
+    .form__textarea {
+        @include tertiary-font(1.5rem);
+        color:$heading-color;
+        background-color:$background-color2;
+        border: 0.1rem solid $primary-color;
+        &:active {border: 0.1rem solid $primary-color;}
+        margin:1rem 0rem;
+    }
+
+    .form__attachImg {
+        @include main-font(1.3rem);
+        color:$heading-color;
+        background-color:$background-color2;
+        border: 0.1rem solid $primary-color;
+        &:active {border: 0.1rem solid $primary-color;}
+        margin:1rem 0rem;
+    }
+
+    button {margin:2rem 2rem 2rem 1rem;}
+}
+
+
+/* MOBILE -------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+    .form__img {
+        img {
+            display:none;
+        }
+    }
+
+    .form {
+        .form__title h1 {
+            @include title-font(2.5rem, .5rem);
+            text-align: center;
+            padding: 1rem;
+            margin: 1rem 2rem;
+        }
+    }
+
+}

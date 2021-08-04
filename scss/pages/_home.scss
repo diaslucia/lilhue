@@ -1,0 +1,178 @@
+/* Inicio home */
+
+body {background-image:url("../../assets/img/fondo.jpg");}
+
+.home {
+    @include flex(row, center);
+    .home__photosLeft {
+        .home__photoLeft--wallpaper {
+            position: absolute;
+            z-index: -1;
+            top: -25px;
+            left: 20px;
+            margin:.5rem;
+            width: 100%;
+            height:auto;
+
+        }
+        img {
+            width: 40%;
+            height: auto;
+            margin: 1rem;
+        }
+        .home__img1 {
+            margin-top:1rem;
+            margin-left: 2rem;}
+        .home__img2 {
+            margin-top:8rem;
+            margin-left:1rem;
+        }
+        .home__photoLeft--flower {
+            position: absolute;
+            z-index: 2;
+            top:-30px;
+            left:300px;
+            height: auto;
+            width: 130px;
+        }
+    }
+    .home__slogan {
+        color:$heading-color;
+        font-family: "Space Mono", monospace;
+        h3 {
+            font-weight: bold;
+            letter-spacing: .8rem;
+            padding: 1rem;
+            margin: 2rem 0.5rem 2rem 0.5rem;
+            font-size: 3rem;
+            line-height: 4rem;
+        }
+        p {
+            @include secondary-font(2rem);
+            color:$text-color;
+            font-weight: bold;
+            text-align: center;
+            padding: 0.5rem;
+            margin: 1rem 3rem 1rem 3rem;
+            line-height: 2.5rem;
+        }
+    }
+    .home__photosRight {
+        .home__photoRight--wallpaper {
+            position: absolute;
+            z-index: -1;
+            top: -25px;
+            right: 20px;
+            margin:.5rem;
+            width: 100%;
+            height:auto;
+        }
+        img {
+            width: 38%;
+            height:auto;
+            margin: 1rem;
+        }
+        .home__img3 {
+            margin-top:-8rem;
+            margin-right: 1rem;}
+        .home__img4 {
+            margin-top:5rem;
+            margin-right:-1rem;
+        }
+        .home__photoRight--flower {
+            position: absolute;
+            z-index: 2;
+            top: 150px;
+            right:350px;
+            height: 170px;
+            width: auto;
+        }
+    }    
+}
+
+
+
+/* Inicio Cubos */
+
+.home__card1, .home__card2, .home__card3 {
+    background-color:$secondary-color;
+    @include flex(row, space-around);
+    margin: 8rem 1rem 1rem 3rem;
+    width: 90%;
+    max-width: 40rem;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    border-radius: 20%;
+}
+
+.home__cardImg {
+    width:9rem;
+    height:15rem;
+    margin: 2rem 1rem 2rem 2rem;
+    border-radius: 35%;
+    transition: 0.3s;
+    &:hover{transform: scale(1.1,1.1)};
+}
+
+.home__cardUl {
+    text-align: center;
+    list-style-type: none;
+    .home__cardTitle {
+        color:$heading-color;
+        @include main-font(2rem);
+        font-weight: bold;
+        padding: 0.5rem;
+        margin: 1.5rem 0.3rem 1rem 0.3rem;
+        line-height: 3rem;
+    }
+    #home__cardTitle--height {line-height: 4rem;}
+}
+
+/* MOBILE -------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+    body {background-image:url("../../assets/img/fondo.jpg");}
+    
+    .home {
+        @include flex(column, center);
+        .home__photosLeft {
+            .home__photoLeft--wallpaper {
+                margin-top: 4rem;
+                width: 90%;
+            }
+            img {width: 35%;}
+        }
+
+        .home__slogan {h3 {line-height: 4rem;}}
+
+        .home__photosRight {
+            .home__photoRight--wallpaper {
+                margin-top: 4rem;
+                width: 90%;
+            }
+            img {width: 38%;}
+            .home__img3 {
+                margin-top:-11rem;
+                margin-left: 5rem;}
+            .home__img4 {
+                margin-top:6rem;
+                margin-bottom: 9rem;
+            }
+            .home__photoRight--flower {
+                right:330px;
+            }
+        }    
+    }
+    .cards {
+        @include flex(column, center);
+    }
+    .home__card1, .home__card2, .home__card3 {
+        width: 95%;
+        height: auto;
+        border-radius: 20%;
+        margin: 1rem;
+    }
+    
+}

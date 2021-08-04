@@ -1,0 +1,110 @@
+
+.nav__nav {
+    @include flex(row,space-around);
+    background-color:$primary-color;
+    width: 100vw;
+    height: 10rem;
+    margin-top: 7rem;
+    margin-bottom: 8rem;
+    .nav__menu1 {
+        ul {
+            list-style-type: none;
+            @include flex(row,center);
+            li {
+                @include main-font(1.7rem);
+                padding: map-get($p,s);
+                margin: 0rem 2rem;
+                a {
+                    text-decoration: none;
+                    color:$tertiary-color;
+                    &:hover{color:$secondary-color; 
+                            font-weight: normal !important; 
+                            letter-spacing: .3rem;}
+                }
+            }
+        }
+    }
+    .nav__logo {
+        img {
+            height: 18rem;
+            width: 18rem;
+        }
+    }
+    .nav__menu2 {
+        ul {
+            list-style-type: none;
+            @include flex(row,space-around);
+            li {
+                @include main-font(1.7rem);
+                padding: map-get($p,s);
+                margin: 0rem 2rem;
+                a {
+                    text-decoration: none;
+                    color:$tertiary-color;
+                    &:hover{color:$secondary-color; 
+                        font-weight: normal !important; 
+                        letter-spacing: .3rem;}
+                }
+            }
+        }
+        .nav__menu2--dropdown {
+            background-color:$primary-color;
+            padding-right:100%;
+            padding-top:1rem;
+            padding-bottom:1rem;
+            border:none;
+            .dropdown-item {
+                color:$tertiary-color;
+                display: inline-block;
+                width: 100%;
+                padding-right: 1rem !important;
+                @include main-font(1.5rem);
+                &:hover{background-color:$primary-color !important; color:$secondary-color;}
+            }
+        }
+    }
+}
+
+
+/* MOBILE -------------------------------------------------------------------------------------*/
+
+@media screen and(min-width:0px) and(max-width:767px){
+
+    .nav__nav {
+        @include flex(column,flex-start);
+        height: auto;
+        margin-bottom: 3rem !important;
+        .mytoggle {
+            position: absolute;
+            left:3rem;
+            top: 13rem;
+            font-size: 2rem;
+            padding-top: 1rem;
+            border-radius: 50%;
+            color:$primary-color !important;
+            background-color: $tertiary-color !important;
+        }
+        .nav__logo {order:0; margin:-2rem 0rem;}
+        .nav__menu1 {
+            order: 1;
+            margin-top: 3rem;
+            ul {
+                @include flex(column,center);
+                li {
+                    &:hover{color:$secondary-color;}
+                    a {color:$tertiary-color;}
+                }
+            } 
+        }
+        .nav__menu2 {
+            order: 2;
+            ul {
+                @include flex(column,center);
+                li {
+                    &:hover{color:$secondary-color;}
+                    a {color:$tertiary-color;}
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+html{font-size: 62.5%;}
+
+@mixin main-font($size){
+    font-family: "Space Mono", monospace, !important;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size:$size;
+}
+
+@mixin secondary-font($size){
+    font-family: "Space Mono", monospace, !important;
+    font-size:$size;
+}
+
+@mixin tertiary-font($size){
+    font-family: "Source Code Pro", monospace;
+    font-size: $size;
+}
+
+@mixin slogan-font($size){
+    font-family: "Space Mono", monospace;
+    letter-spacing: 0.2rem;
+    font-size: $size;
+}
+
+@mixin title-font($size, $space){
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $size;
+    letter-spacing: $space;
+}
+
+@mixin info-font($size){
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    text-align: justify;
+    font-size: $size;
+    word-spacing: 3px;
+}

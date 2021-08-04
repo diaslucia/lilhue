@@ -1,0 +1,30 @@
+.galeria {
+    margin-top:2rem;
+    div {
+    @include flex(row, space-around);
+    flex-wrap: nowrap;
+    }
+    img {
+        height: auto;
+        width: 15rem;
+        transition: 1s;
+        &:hover{transform: scale(1.05,1.05);}
+    }
+}
+
+/* MOBILE -------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+    .galeria {
+        margin-top:.5rem;
+        div {@include flex(row, space-evenly);}
+        img {
+            height: auto;
+            width: 95%;
+            margin:0.5rem;
+            &:hover{transform: scale(1.02,1.02);}
+        }
+    }
+    
+} 

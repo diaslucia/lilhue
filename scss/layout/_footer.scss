@@ -1,0 +1,60 @@
+/* Footer container */
+
+.footer {
+    background-color: #a38c8c;
+    margin-top:3rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    .footer__container{
+        @include flex(row, space-around);
+    }
+}
+
+/* Primer DIV con logo y slogan */
+
+.footer__div {
+    @include flex(row,flex-start);
+    .footer__logo{height: 8rem; width: 8rem; margin-top:1rem;}
+    .footer__slogan {
+        @include slogan-font(1.5rem);
+        color:$tertiary-color;
+        margin: 1rem 0rem 0rem 3rem;
+    }
+}
+
+/* Redes Sociales y Contacto */
+
+.footer__title{@include main-font(2rem); font-weight: bold; margin:1rem;}
+ul { list-style-type: none;
+    li{ @include tertiary-font(1.5rem);
+        color:$tertiary-color;
+        margin:.5rem .5rem .5rem 1rem;
+            a {text-decoration: none; color:$tertiary-color;
+                &:hover {font-weight: bold;
+                        text-decoration: none; 
+                        color:$secondary-color;}
+                #instaLogo {font-size: 2.5rem; transition: 0.3s;
+                    &:hover {transform: scale(1.1,1.1)}}
+
+            }
+    }
+}
+
+.footer__redes{
+    @include flex(row, flex-start);
+    #faceLogo {font-size: 2.5rem; transition: 0.3s;
+        &:hover {transform: scale(1.1,1.1)}}
+    #pinterestLogo {font-size: 2.5rem; transition: 0.3s;
+        &:hover {transform: scale(1.1,1.1)}}
+}
+
+/* MOBILE -------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    .footer {
+        .footer__container{
+            @include flex(column, flex-start);
+        }
+    }
+    .footer__title {@include main-font(1.5rem);}
+}
