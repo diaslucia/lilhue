@@ -1,6 +1,6 @@
 /* Inicio home */
 
-body {background-image:url("../../assets/img/fondo.jpg");}
+body {background-image:url(../../assets/img/fondo.jpg);}
 
 .home {
     @include flex(row, center);
