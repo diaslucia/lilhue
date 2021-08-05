@@ -392,26 +392,27 @@ body {
     height: auto;
     width: 35rem; }
 
-.nosotras__info h3 {
-  font-family: "Space Mono", monospace;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 3rem;
-  letter-spacing: 1.5rem;
-  color: #30170e;
-  padding: 1.5rem;
-  margin: 3rem 2rem 2rem 2rem; }
-
-.nosotras__info p {
-  font-family: "Space Mono", monospace;
-  font-weight: bold;
-  text-align: justify;
-  font-size: 1.7rem;
-  word-spacing: 3px;
-  color: #3d2515;
-  padding: 1rem;
-  margin: 0rem 8rem 2rem 2rem; }
+.nosotras__info {
+  margin-bottom: 4rem; }
+  .nosotras__info h3 {
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 1.5rem;
+    color: #30170e;
+    padding: 1.5rem;
+    margin: 2.5rem 2rem 2rem 2rem; }
+  .nosotras__info p {
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 1.7rem;
+    word-spacing: 3px;
+    color: #3d2515;
+    padding: 1rem;
+    margin: 0rem 8rem 1rem 2rem; }
 
 /* MOBILE -------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
@@ -425,7 +426,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 2rem; }
     .nosotras__info h3 {
       font-family: "Space Mono", monospace;
       font-weight: bold;
@@ -435,7 +437,7 @@ body {
       letter-spacing: 1.5rem;
       color: #30170e;
       padding: 1rem;
-      margin-top: 5rem; }
+      margin-top: 5.5rem; }
     .nosotras__info p {
       font-family: "Space Mono", monospace;
       font-weight: bold;
@@ -444,7 +446,7 @@ body {
       word-spacing: 3px;
       color: #3d2515;
       padding: 1rem;
-      margin: 0rem 2rem; } }
+      margin: 0rem 1rem 2rem 1rem; } }
 
 .galeria {
   margin-top: 2rem; }
@@ -489,9 +491,10 @@ body {
     margin: 1rem; }
 
 .cuidados--padding {
-  padding: 0rem; }
+  padding: 0rem;
+  margin-bottom: 1rem; }
 
-.row {
+.cuidados__row {
   margin: 0rem; }
 
 .cuidados .cuidados__title--wallpaper {
@@ -536,7 +539,7 @@ body {
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .cuidados--padding {
     padding: 0rem; }
-  .row {
+  .cuidados__row {
     margin: 0rem; }
   .cuidados__img {
     display: none; }
@@ -577,7 +580,8 @@ body {
   flex-direction: column; }
   .form__img img {
     height: auto;
-    width: 95%; }
+    width: 95%;
+    margin-left: 3rem; }
 
 .form {
   margin-left: 4rem; }
@@ -673,6 +677,8 @@ body {
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .contacto--padding {
     padding: 0rem; }
+  .contacto__box {
+    margin-left: 2rem; }
   .form__img img {
     display: none; }
   .form {
@@ -775,9 +781,9 @@ body {
       text-decoration: none;
       color: whitesmoke; }
 
-.row, .container-fluid, .columns {
-  padding: 0rem !important;
-  margin: 0rem !important; }
+.comocomprar__row, .comocomprar__container-fluid, .columns {
+  padding: 0rem;
+  margin: 0rem; }
 
 /* Opcion de formulario o whatssap */
 h1 {
@@ -917,9 +923,9 @@ h2 {
 
 /* MOBILE -------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  .row, .container-fluid, .columns {
-    padding: 0rem !important;
-    margin: 0rem !important; }
+  .comocomprar__row, .comocomprar__container-fluid, .columns {
+    padding: 0rem;
+    margin: 0rem; }
   .comocomprar__paso1--img {
     display: flex;
     align-items: center;

@@ -5,6 +5,7 @@
     img {
         height: auto;
         width: 95%;
+        margin-left: 3rem;
     }
 }
 
@@ -90,6 +91,7 @@
 @media screen and (min-width: 0px) and (max-width: 767px) {
 
     .contacto--padding {padding:0rem;}
+    .contacto__box {margin-left:2rem;}
 
     .form__img {
         img {

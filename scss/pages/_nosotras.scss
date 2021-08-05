@@ -19,14 +19,15 @@
         @include title-font(3rem, 1.5rem);
         color:$heading-color;
         padding: 1.5rem;
-        margin: 3rem 2rem 2rem 2rem;
+        margin: 2.5rem 2rem 2rem 2rem;
     }
     p {
         @include info-font(1.7rem);
         color:$text-color;
         padding: 1rem;
-        margin: 0rem 8rem 2rem 2rem;
+        margin: 0rem 8rem 1rem 2rem;
     }
+    margin-bottom: 4rem;
 }
 
 /* MOBILE -------------------------------------------------------------------------------------*/
@@ -49,13 +50,14 @@
             @include title-font(2.3rem, 1.5rem);
             color:$heading-color;
             padding: 1rem;
-            margin-top: 5rem;
+            margin-top: 5.5rem;
         }
         p {
             @include info-font(1.5rem);
             color:$text-color;
             padding: 1rem;
-            margin:0rem 2rem;
+            margin:0rem 1rem 2rem 1rem;
         }
+        margin-bottom: 2rem;
     }
 } 

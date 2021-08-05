@@ -9,8 +9,8 @@
     }
 }
 
-.cuidados--padding{padding:0rem;}
-.row {margin:0rem;}
+.cuidados--padding{padding:0rem; margin-bottom: 1rem;}
+.cuidados__row {margin:0rem;}
 
 .cuidados {
     .cuidados__title--wallpaper {
@@ -46,7 +46,7 @@
 @media screen and (min-width: 0px) and (max-width: 767px) {
 
     .cuidados--padding {padding:0rem;}
-    .row {margin:0rem;}
+    .cuidados__row {margin:0rem;}
     .cuidados__img {display:none;}
     .cuidados {
         @include flex(column, center);

@@ -1,4 +1,4 @@
-.row, .container-fluid, .columns {padding: 0rem !important; margin:0rem !important;}
+.comocomprar__row, .comocomprar__container-fluid, .columns {padding: 0rem; margin:0rem;}
 
 /* Opcion de formulario o whatssap */
 
@@ -125,7 +125,7 @@ h2{
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
 
-    .row, .container-fluid, .columns {padding: 0rem !important; margin:0rem !important;}
+    .comocomprar__row, .comocomprar__container-fluid, .columns {padding: 0rem; margin:0rem;}
 
     .comocomprar__paso1--img {@include flex(column, center);}
     .comocomprar__paso3--2 {@include flex(column, center);}
