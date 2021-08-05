@@ -40,12 +40,13 @@ body {background-image:url(../../assets/img/fondo.jpg);}
         color:$heading-color;
         font-family: "Space Mono", monospace;
         h3 {
-            font-weight: bold;
+            font-weight:bolder;
             letter-spacing: .8rem;
             padding: 1rem;
-            margin: 2rem 0.5rem 2rem 0.5rem;
+            margin: 2rem 0.5rem .5rem 0.5rem;
             font-size: 3rem;
             line-height: 4rem;
+            text-shadow: 2px 2px 1px $secondary-color;
         }
         p {
             @include secondary-font(2rem);
@@ -97,13 +98,14 @@ body {background-image:url(../../assets/img/fondo.jpg);}
 .home__card1, .home__card2, .home__card3 {
     background-color:$secondary-color;
     @include flex(row, space-around);
-    margin: 8rem 1rem 1rem 3rem;
+    margin: 6rem 1rem 1rem 3rem;
     width: 90%;
     max-width: 40rem;
     height: auto;
     justify-self: center;
     align-self: center;
     border-radius: 20%;
+    box-shadow: 3px 3px 10px $primary-color;
 }
 
 .home__cardImg {

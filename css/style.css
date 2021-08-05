@@ -248,12 +248,13 @@ body {
     color: #30170e;
     font-family: "Space Mono", monospace; }
     .home .home__slogan h3 {
-      font-weight: bold;
+      font-weight: bolder;
       letter-spacing: .8rem;
       padding: 1rem;
-      margin: 2rem 0.5rem 2rem 0.5rem;
+      margin: 2rem 0.5rem .5rem 0.5rem;
       font-size: 3rem;
-      line-height: 4rem; }
+      line-height: 4rem;
+      text-shadow: 2px 2px 1px #d2c2be; }
     .home .home__slogan p {
       font-family: "Space Mono", monospace, !important;
       font-size: 2rem;
@@ -296,13 +297,14 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  margin: 8rem 1rem 1rem 3rem;
+  margin: 6rem 1rem 1rem 3rem;
   width: 90%;
   max-width: 40rem;
   height: auto;
   justify-self: center;
   align-self: center;
-  border-radius: 20%; }
+  border-radius: 20%;
+  box-shadow: 3px 3px 10px #a38c8c; }
 
 .home__cardImg {
   width: 9rem;
@@ -559,6 +561,9 @@ body {
       width: 50vw;
       margin: 1rem; } }
 
+.contacto--padding {
+  padding: 0rem; }
+
 .form__img {
   display: flex;
   align-items: center;
@@ -568,67 +573,63 @@ body {
     height: auto;
     width: 95%; }
 
-.form .form__title h1 {
-  font-family: "Space Mono", monospace;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 3rem;
-  letter-spacing: 1.1rem;
-  color: #30170e;
-  padding: 1.5rem;
-  margin: 2rem; }
-
-.form .form__subtitle {
-  font-family: "Space Mono", monospace;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1.5rem;
-  letter-spacing: 0.3rem;
-  text-align: start;
-  color: #30170e;
-  margin: 1.5rem 0.5rem; }
-
-.form .form__data {
-  font-family: "Space Mono", monospace, !important;
-  text-transform: uppercase;
-  letter-spacing: .3rem;
-  font-size: 1.5rem;
-  color: #3d2515;
-  margin: .5rem 0.5rem;
-  text-align: center; }
-
-.form .form__info .form__info--input {
-  width: 20rem;
-  height: 2.2rem;
-  background-color: #f0ede8;
-  border: 0.1rem solid #a38c8c; }
-
-.form .form__textarea {
-  font-family: "Source Code Pro", monospace;
-  font-size: 1.5rem;
-  color: #30170e;
-  background-color: #f0ede8;
-  border: 0.1rem solid #a38c8c;
-  margin: 1rem 0rem; }
-  .form .form__textarea:active {
+.form {
+  margin-left: 4rem; }
+  .form .form__title h1 {
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 1.1rem;
+    color: #30170e;
+    padding: 1.5rem;
+    margin: 2rem 2rem 2rem -4rem; }
+  .form .form__subtitle {
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    text-align: start;
+    color: #30170e;
+    margin: 1.5rem 0.5rem; }
+  .form .form__data {
+    font-family: "Space Mono", monospace, !important;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 1.5rem;
+    color: #3d2515;
+    margin: .5rem 0.5rem;
+    text-align: center; }
+  .form .form__info--input {
+    width: 20rem;
+    height: 2.2rem;
+    background-color: #f0ede8;
     border: 0.1rem solid #a38c8c; }
-
-.form .form__attachImg {
-  font-family: "Space Mono", monospace, !important;
-  text-transform: uppercase;
-  letter-spacing: .3rem;
-  font-size: 1.3rem;
-  color: #30170e;
-  background-color: #f0ede8;
-  border: 0.1rem solid #a38c8c;
-  margin: 1rem 0rem; }
-  .form .form__attachImg:active {
-    border: 0.1rem solid #a38c8c; }
-
-.form button {
-  margin: 2rem 2rem 2rem 1rem; }
+  .form .form__textarea {
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.5rem;
+    color: #30170e;
+    background-color: #f0ede8;
+    border: 0.1rem solid #a38c8c;
+    margin: 1rem 0rem; }
+    .form .form__textarea:active {
+      border: 0.1rem solid #a38c8c; }
+  .form .form__attachImg {
+    font-family: "Space Mono", monospace, !important;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 1.3rem;
+    color: #30170e;
+    background-color: #f0ede8;
+    border: 0.1rem solid #a38c8c;
+    margin: 1rem 0rem; }
+    .form .form__attachImg:active {
+      border: 0.1rem solid #a38c8c; }
+  .form button {
+    margin: 2rem 2rem 2rem 1rem; }
 
 /* EDICIÓN DE BOTONES CHECKBOX */
 .radio {
@@ -664,18 +665,29 @@ body {
 
 /* MOBILE -------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .contacto--padding {
+    padding: 0rem; }
   .form__img img {
     display: none; }
-  .form .form__title h1 {
-    font-family: "Space Mono", monospace;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.5rem;
-    letter-spacing: 0.5rem;
-    text-align: center;
-    padding: 1rem;
-    margin: 1rem 2rem; } }
+  .form {
+    margin-left: 0rem; }
+    .form .form__info--input {
+      width: 25rem;
+      height: 3rem;
+      background-color: #f0ede8;
+      border: 0.1rem solid #a38c8c; }
+    .form .form__title h1 {
+      font-family: "Space Mono", monospace;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.5rem;
+      letter-spacing: 0.5rem;
+      text-align: center;
+      padding: 1rem;
+      margin: 1rem 2rem; }
+    .form .form__textarea {
+      max-width: 90%; } }
 
 .buttonStyle {
   background-color: #d39285;
