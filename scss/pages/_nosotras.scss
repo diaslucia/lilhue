@@ -19,10 +19,10 @@
         @include title-font(3rem, 1.5rem);
         color:$heading-color;
         padding: 1.5rem;
-        margin: 4rem 2rem 2rem 2rem;
+        margin: 3rem 2rem 2rem 2rem;
     }
     p {
-        @include info-font(2rem);
+        @include info-font(1.7rem);
         color:$text-color;
         padding: 1rem;
         margin: 0rem 8rem 2rem 2rem;
