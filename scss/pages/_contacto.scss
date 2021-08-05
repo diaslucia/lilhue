@@ -91,7 +91,7 @@
 @media screen and (min-width: 0px) and (max-width: 767px) {
 
     .contacto--padding {padding:0rem;}
-    .contacto__box {margin-left:2rem;}
+    .contacto__row {margin:0rem;}
 
     .form__img {
         img {
@@ -100,7 +100,7 @@
     }
 
     .form {
-        margin-left: 0rem;
+        margin-left: 1.8rem;
         .form__info--input {
             width: 25rem;
             height: 3rem;
@@ -115,5 +115,6 @@
         }
         .form__textarea { max-width: 90%;}
     }
+    #form__set{font-size: 1.2rem;}
 
 }
