@@ -487,7 +487,8 @@ body {
   margin: 0rem; }
 
 .cuidados .cuidados__title--wallpaper {
-  background: linear-gradient(to right, #f0ede8, #e0dad9); }
+  background: linear-gradient(to right, #f0ede8, #e0dad9);
+  width: 100%; }
   .cuidados .cuidados__title--wallpaper .cuidados__title {
     font-family: "Space Mono", monospace;
     font-weight: bold;

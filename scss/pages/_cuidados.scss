@@ -15,6 +15,7 @@
 .cuidados {
     .cuidados__title--wallpaper {
         background: linear-gradient(to right, #f0ede8, #e0dad9);
+        width: 100%;
         .cuidados__title {
             @include title-font(2rem, .5rem);
             color:$heading-color;
