@@ -599,12 +599,7 @@ body {
   margin: .5rem 0.5rem;
   text-align: center; }
 
-.form .form__radio {
-  color: black; }
-  .form .form__radio:active {
-    color: red; }
-
-.form .form__info input {
+.form .form__info .form__info--input {
   width: 20rem;
   height: 2.2rem;
   background-color: #f0ede8;
@@ -634,6 +629,38 @@ body {
 
 .form button {
   margin: 2rem 2rem 2rem 1rem; }
+
+/* EDICIÓN DE BOTONES CHECKBOX */
+.radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px; }
+
+.form__input {
+  display: none; }
+
+.form__radio {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #a38c8c;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-sizing: border-box;
+  padding: 2px; }
+
+.form__radio:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #af7266;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.15s; }
+
+.form__input:checked + .form__radio:after {
+  transform: scale(1); }
 
 /* MOBILE -------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {

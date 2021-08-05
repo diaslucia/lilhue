@@ -77,7 +77,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-lg-5 col-xl-5 form__img">
-                <img src="../assets/img/pedidos.png" alt="Mate y azucarera pintados a mano" data-aos="zoom-in" data-aos-duration="1500"/>
+                <img src="../assets/img/pedidos.png" alt="Mate y azucarera pintados a mano" data-aos-anchor="#example-anchor" data-aos="zoom-in" data-aos-duration="1500"/>
             </div>
             <div class="col-12 col-lg-7 col-xl-7">
                 <section class="form">
@@ -106,27 +106,48 @@
                         </div>
 
                         <div class="form__contact">
+
                             <h3 class="form__subtitle">¿Cómo te gustaría que nos contactemos?</h3>
-                            <input type="radio" name="contactar" value="whatssap" checked/>
-                            <label class="form__data" for="contactar">Whatssap</label>
+                            <label class="form__data radio" for="contactar1">
+                                <input class="form__input" type="checkbox" name="contactar" id="contactar1" value="whatssap" checked/>
+                                <div class="form__radio"></div>
+                                Whatssap
+                            </label>
                             <br>
-                            <input type="radio" name="contactar" value="teléfono"/>
-                            <label class="form__data" for="contactar">Llamada telefónica</label>
+                            <label class="form__data radio" for="contactar2">
+                                <input class="form__input" type="checkbox" name="contactar" id="contactar2" value="teléfono"/>
+                                <div class="form__radio"></div>
+                                Llamada telefónica 
+                            </label>
                             <br>
-                            <input type="radio" name="contactar" value="email"/>
-                            <label class="form__data" for="contactar">Email</label>
+
+                            <label class="form__data radio" for="contactar3">
+                                <input class="form__input" type="checkbox" name="contactar" id="contactar3" value="email"/>
+                                <div class="form__radio"></div>
+                                Email
+                            </label>
+
                         </div>
 
                         <div class="form__product">
                             <h3 class="form__subtitle">¿En que producto estás interesadx?</h3>
-                            <input class="form__radio" type="radio" name="producto" value="mateazucarera" checked/>
-                            <label class="form__data" for="contactar">Mate + Azucarera</label>
+                            <label class="form__data radio" for="producto1">
+                                <input class="form__input" type="checkbox" name="producto1" id="producto1" value="mateazucarera" checked/>
+                                <span class="form__radio"></span>
+                                Mate + Azucarera
+                            </label>
                             <br>
-                            <input type="radio" name="producto" value="mate"/>
-                            <label class="form__data" for="contactar">Mate</label>
+                            <label class="form__data radio" for="producto2">
+                                <input class="form__input" type="checkbox" name="producto2" id="producto2" value="mate"/>
+                                <span class="form__radio"></span>
+                                Mate
+                            </label>
                             <br>
-                            <input type="radio" name="producto" value="azucarera"/>
-                            <label class="form__data" for="contactar">Azucarera</label>
+                            <label class="form__data radio" for="producto3">
+                                <input class="form__input" type="checkbox" name="producto3" id="producto3" value="azucarera"/>
+                                <span class="form__radio"></span>
+                                Azucarera
+                            </label>
                         </div>
 
                         <div class="form__text">
