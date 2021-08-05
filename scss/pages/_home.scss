@@ -176,5 +176,8 @@ body {background-image:url(../../assets/img/fondo.jpg);}
         border-radius: 20%;
         margin: 1rem;
     }
+    .home__cardTitle {
+        @include main-font(1.8rem);
+    }
     
 }
