@@ -483,9 +483,11 @@ body {
 .cuidados--padding {
   padding: 0rem; }
 
+.row {
+  margin: 0rem; }
+
 .cuidados .cuidados__title--wallpaper {
-  background: linear-gradient(to right, #f0ede8, #e0dad9);
-  width: 100%; }
+  background: linear-gradient(to right, #f0ede8, #e0dad9); }
   .cuidados .cuidados__title--wallpaper .cuidados__title {
     font-family: "Space Mono", monospace;
     font-weight: bold;
@@ -523,13 +525,18 @@ body {
 
 /* MOBILE -------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .cuidados--padding {
+    padding: 0rem; }
+  .row {
+    margin: 0rem; }
   .cuidados__img {
     display: none; }
   .cuidados {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 100%; }
     .cuidados .cuidados__title--wallpaper .cuidados__title {
       font-family: "Space Mono", monospace;
       font-weight: bold;
@@ -539,12 +546,12 @@ body {
       letter-spacing: 0.1rem;
       width: 100%;
       padding: 1rem;
-      margin: 1rem 0rem; }
+      margin: 1.5rem 0rem; }
     .cuidados p {
       margin: 1.5rem; }
     .cuidados li {
       max-width: 75%;
-      margin: 1.5rem 1.5rem 1.5rem 9rem; }
+      margin: 1.5rem 1.5rem 1.5rem 6rem; }
     .cuidados .cuidados__img--mobile {
       display: inline-block;
       height: auto;
