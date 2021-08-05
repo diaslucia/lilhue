@@ -32,7 +32,7 @@
     li {
         @include info-font(1.5rem);
         color:$text-color;
-        margin: 1rem 8rem 2rem 5rem;
+        margin: 1rem 3rem 2rem 8rem;
         line-height: 2rem;
     }
     .cuidados__img--mobile {
@@ -55,8 +55,10 @@
                 margin: 1rem 0rem;
             } 
         }
-        p {margin:1rem;}
-        li {margin: 2rem 1rem 2rem 1rem;}
+        p {margin:1.5rem;}
+        li {
+            max-width: 75%;
+            margin: 1.5rem 1.5rem 1.5rem 9rem;}
         .cuidados__img--mobile {
             display: inline-block;
             height:auto;

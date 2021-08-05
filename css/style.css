@@ -515,7 +515,7 @@ body {
   font-size: 1.5rem;
   word-spacing: 3px;
   color: #3d2515;
-  margin: 1rem 8rem 2rem 5rem;
+  margin: 1rem 3rem 2rem 8rem;
   line-height: 2rem; }
 
 .cuidados .cuidados__img--mobile {
@@ -541,9 +541,10 @@ body {
       padding: 1rem;
       margin: 1rem 0rem; }
     .cuidados p {
-      margin: 1rem; }
+      margin: 1.5rem; }
     .cuidados li {
-      margin: 2rem 1rem 2rem 1rem; }
+      max-width: 75%;
+      margin: 1.5rem 1.5rem 1.5rem 9rem; }
     .cuidados .cuidados__img--mobile {
       display: inline-block;
       height: auto;
