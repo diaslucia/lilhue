@@ -78,6 +78,9 @@ html {
         background-color: #a38c8c !important;
         color: #d2c2be; }
 
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center !important; }
+
 /* MOBILE -------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .nav__nav {
@@ -212,7 +215,7 @@ ul {
 
 /* Inicio home */
 body {
-  background-image: url(../../assets/img/fondo.jpg); }
+  background-image: url(../assets/img/fondo.jpg); }
 
 .home {
   display: flex;
@@ -333,8 +336,6 @@ body {
 
 /* MOBILE -------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  body {
-    background-image: url("../../assets/img/fondo.jpg"); }
   .home {
     display: flex;
     align-items: center;
