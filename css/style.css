@@ -230,6 +230,8 @@ body {
     margin: .5rem;
     width: 100%;
     height: auto; }
+  .home .home__photosLeft .home__photoLeft--wallpapermobile {
+    display: none; }
   .home .home__photosLeft img {
     width: 40%;
     height: auto;
@@ -275,6 +277,8 @@ body {
     margin: .5rem;
     width: 100%;
     height: auto; }
+  .home .home__photosRight .home__photoRight--wallpapermobile {
+    display: none; }
   .home .home__photosRight img {
     width: 38%;
     height: auto;
@@ -342,25 +346,49 @@ body {
     justify-content: center;
     flex-direction: column; }
     .home .home__photosLeft .home__photoLeft--wallpaper {
-      margin-top: 4rem;
-      width: 90%; }
+      display: none; }
+    .home .home__photosLeft .home__photoLeft--wallpapermobile {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 1px;
+      left: 20px;
+      width: 90%;
+      height: auto; }
     .home .home__photosLeft img {
       width: 35%; }
+    .home .home__photosLeft .home__img1 {
+      margin-top: .5rem;
+      margin-left: 7rem; }
+    .home .home__photosLeft .home__img2 {
+      margin-top: 12rem;
+      margin-left: .5rem; }
+    .home .home__photosLeft .home__photoLeft--flower {
+      display: none; }
     .home .home__slogan h3 {
       line-height: 4rem; }
+    .home .home__slogan p {
+      margin-bottom: 9rem; }
     .home .home__photosRight .home__photoRight--wallpaper {
-      margin-top: 4rem;
-      width: 90%; }
+      display: none; }
+    .home .home__photosRight .home__photoRight--wallpapermobile {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 1px;
+      left: 20px;
+      width: 90%;
+      height: auto; }
     .home .home__photosRight img {
       width: 38%; }
     .home .home__photosRight .home__img3 {
-      margin-top: -11rem;
+      margin-bottom: 10rem;
       margin-left: 5rem; }
     .home .home__photosRight .home__img4 {
       margin-top: 6rem;
       margin-bottom: 9rem; }
     .home .home__photosRight .home__photoRight--flower {
-      right: 330px; }
+      display: none; }
   .cards {
     display: flex;
     align-items: center;

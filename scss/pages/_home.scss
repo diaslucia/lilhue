@@ -13,8 +13,8 @@ body {background-image:url(../assets/img/fondo.jpg);}
             margin:.5rem;
             width: 100%;
             height:auto;
-
         }
+        .home__photoLeft--wallpapermobile {display:none;}
         img {
             width: 40%;
             height: auto;
@@ -68,6 +68,7 @@ body {background-image:url(../assets/img/fondo.jpg);}
             width: 100%;
             height:auto;
         }
+        .home__photoRight--wallpapermobile {display:none;}
         img {
             width: 38%;
             height:auto;
@@ -138,31 +139,49 @@ body {background-image:url(../assets/img/fondo.jpg);}
     .home {
         @include flex(column, center);
         .home__photosLeft {
-            .home__photoLeft--wallpaper {
-                margin-top: 4rem;
+            .home__photoLeft--wallpaper {display:none;}
+            .home__photoLeft--wallpapermobile {display:block;
+                position: absolute;
+                z-index: -1;
+                top: 1px;
+                left: 20px;
                 width: 90%;
-            }
+                height:auto;
+            } 
             img {width: 35%;}
+            .home__img1 {
+                margin-top:.5rem;
+                margin-left:7rem;}
+            .home__img2 {
+                margin-top:12rem;
+                margin-left:.5rem;
+            }
+            .home__photoLeft--flower {display:none;}
         }
 
-        .home__slogan {h3 {line-height: 4rem;}}
+        .home__slogan {
+            h3 {line-height: 4rem;}
+            p {margin-bottom: 9rem;}}
 
         .home__photosRight {
-            .home__photoRight--wallpaper {
-                margin-top: 4rem;
+            .home__photoRight--wallpaper {display:none;}
+            .home__photoRight--wallpapermobile {display:block;
+                position: absolute;
+                z-index: -1;
+                top: 1px;
+                left: 20px;
                 width: 90%;
+                height:auto;
             }
             img {width: 38%;}
             .home__img3 {
-                margin-top:-11rem;
+                margin-bottom:10rem;
                 margin-left: 5rem;}
             .home__img4 {
                 margin-top:6rem;
                 margin-bottom: 9rem;
             }
-            .home__photoRight--flower {
-                right:330px;
-            }
+            .home__photoRight--flower {display:none;}
         }    
     }
     .cards {
