@@ -795,16 +795,24 @@ h1 {
   font-size: 2rem;
   color: #30170e;
   margin: 2rem 3rem;
-  text-align: start; }
+  text-align: center; }
 
 .comocomprar__formwp {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row; }
+  .comocomprar__formwp .comocomprar__formwp--form, .comocomprar__formwp .comocomprar__formwp--wp {
+    background-color: #a38c8c;
+    border-radius: 50%;
+    color: #f0ede8;
+    height: 14rem;
+    width: 14rem;
+    text-align: center;
+    margin: 2rem 3rem; }
   .comocomprar__formwp a .comocomprar__icon {
-    color: #af7266;
-    text-shadow: 2px 2px 2px #a38c8c;
+    color: #fcfbf2;
+    text-shadow: 1px 1px 5px #a38c8c;
     font-size: 10rem;
     transition: 1s;
     margin: 2rem; }
@@ -838,7 +846,7 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.3rem;
     letter-spacing: 0.5rem;
     color: #30170e; }
 
@@ -854,10 +862,17 @@ h1 {
     margin: 2rem; }
 
 /* Paso 2 */
-.comocomprar__paso2 img {
-  width: 15rem;
-  height: auto;
-  margin: 1rem 3rem; }
+.comocomprar__paso2--img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; }
+  .comocomprar__paso2--img img {
+    width: 37rem;
+    height: auto;
+    margin: 3rem 3rem;
+    box-shadow: 2px 2px 2px #a38c8c;
+    border-color: 3px black; }
 
 /* h3 h2 general */
 h3 {
@@ -900,7 +915,7 @@ h2 {
       justify-content: space-evenly;
       flex-direction: row; }
       .comocomprar__paso3--2 .comocomprar__modopago .comocomprar__modopago3 img {
-        width: 1rem;
+        width: 15rem;
         height: auto;
         margin: 1rem; }
   .comocomprar__paso3--2 .comocomprar__entrega {
@@ -919,7 +934,7 @@ h2 {
       justify-content: space-evenly;
       flex-direction: row; }
       .comocomprar__paso3--2 .comocomprar__entrega .comocomprar__entrega2 img {
-        width: 1rem;
+        width: 15rem;
         height: auto;
         margin: 1rem; }
 
@@ -937,4 +952,24 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; } }
+    flex-direction: column; }
+    .comocomprar__paso3--2 .comocomprar__entrega {
+      border-radius: 5%;
+      width: 70%; }
+      .comocomprar__paso3--2 .comocomprar__entrega .comocomprar__entrega2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        .comocomprar__paso3--2 .comocomprar__entrega .comocomprar__entrega2 img {
+          width: 13rem; }
+    .comocomprar__paso3--2 .comocomprar__modopago {
+      border-radius: 5%;
+      width: 70%; }
+      .comocomprar__paso3--2 .comocomprar__modopago .comocomprar__modopago3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        .comocomprar__paso3--2 .comocomprar__modopago .comocomprar__modopago3 img {
+          width: 13rem; } }
