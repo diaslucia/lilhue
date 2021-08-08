@@ -803,7 +803,7 @@ h1 {
   justify-content: space-evenly;
   flex-direction: row; }
   .comocomprar__formwp .comocomprar__formwp--form, .comocomprar__formwp .comocomprar__formwp--wp {
-    background-color: #a38c8c;
+    background-color: #d2c2be;
     border-radius: 50%;
     color: #f0ede8;
     height: 14rem;
@@ -811,7 +811,7 @@ h1 {
     text-align: center;
     margin: 2rem 3rem; }
   .comocomprar__formwp a .comocomprar__icon {
-    color: #fcfbf2;
+    color: whitesmoke;
     text-shadow: 1px 1px 5px #a38c8c;
     font-size: 10rem;
     transition: 1s;
@@ -870,7 +870,7 @@ h1 {
   .comocomprar__paso2--img img {
     width: 37rem;
     height: auto;
-    margin: 3rem 3rem;
+    margin: 3rem;
     box-shadow: 2px 2px 2px #a38c8c;
     border-color: 3px black; }
 
@@ -904,9 +904,9 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #d39285;
+    background-color: #d2c2be;
     border-radius: 15%;
-    box-shadow: 2px 2px 5px #af7266;
+    box-shadow: 2px 2px 5px #a38c8c;
     padding: 3rem;
     margin: 2rem 0rem 4rem 0rem; }
     .comocomprar__paso3--2 .comocomprar__modopago .comocomprar__modopago3 {
@@ -923,9 +923,9 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #d39285;
+    background-color: #d2c2be;
     border-radius: 15%;
-    box-shadow: 2px 2px 5px #af7266;
+    box-shadow: 2px 2px 5px #a38c8c;
     padding: 3rem;
     margin: 2rem 0rem 4rem 0rem; }
     .comocomprar__paso3--2 .comocomprar__entrega .comocomprar__entrega2 {
@@ -943,11 +943,39 @@ h2 {
   .comocomprar__row, .comocomprar__container-fluid, .columns {
     padding: 0rem;
     margin: 0rem; }
+  .comocomprar__paso .comocomprar__num {
+    background-color: #a38c8c;
+    border-radius: 50%;
+    color: #f0ede8;
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    font-family: "Space Mono", monospace, !important;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 3rem;
+    margin-left: 1rem; }
+  .comocomprar__paso h2 {
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    color: #30170e;
+    text-align: start; }
+  /* Paso 1 */
   .comocomprar__paso1--img {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column; }
+  /* Paso 2 */
+  .comocomprar__paso2--img img {
+    width: 80%;
+    height: auto;
+    margin: 1rem 1rem 3rem 1rem; }
+  /* Paso 3 */
   .comocomprar__paso3--2 {
     display: flex;
     align-items: center;

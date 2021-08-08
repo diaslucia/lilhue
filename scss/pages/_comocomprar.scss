@@ -11,7 +11,7 @@ h1 {
 .comocomprar__formwp {
     @include flex(row, space-evenly);
     .comocomprar__formwp--form, .comocomprar__formwp--wp {
-        background-color: $primary-color;
+        background-color: $secondary-color;
         border-radius: 50%;
         color: $background-color2;
         height: 14rem;
@@ -21,7 +21,7 @@ h1 {
     }
     a {
         .comocomprar__icon {
-            color: $background-color;
+            color: $tertiary-color;
             text-shadow: 1px 1px 5px $primary-color;
             font-size: 10rem;
             transition: 1s;
@@ -72,7 +72,7 @@ h1 {
     img {
         width: 37rem;
         height: auto;
-        margin:3rem 3rem;
+        margin:3rem;
         box-shadow: 2px 2px 2px $primary-color;
         border-color: 3px black;
     }
@@ -99,9 +99,9 @@ h2{
     @include flex(row, space-evenly);
     .comocomprar__modopago {
         @include flex(column, center);
-        background-color: $accent-color;
+        background-color: $secondary-color;
         border-radius: 15%;
-        box-shadow: 2px 2px 5px $detail-color;
+        box-shadow: 2px 2px 5px $primary-color;
         padding: 3rem;
         margin:2rem 0rem 4rem 0rem;
         .comocomprar__modopago3 {
@@ -115,9 +115,9 @@ h2{
     }
     .comocomprar__entrega {
         @include flex(column, center);
-        background-color: $accent-color;
+        background-color: $secondary-color;
         border-radius: 15%;
-        box-shadow: 2px 2px 5px $detail-color;
+        box-shadow: 2px 2px 5px $primary-color;
         padding: 3rem;
         margin:2rem 0rem 4rem 0rem;
         .comocomprar__entrega2 {
@@ -138,8 +138,39 @@ h2{
 @media screen and (min-width: 0px) and (max-width: 767px) {
 
     .comocomprar__row, .comocomprar__container-fluid, .columns {padding: 0rem; margin:0rem;}
+    .comocomprar__paso {
+        .comocomprar__num {
+            background-color: $primary-color;
+            border-radius: 50%;
+            color: $background-color2;
+            height: 5rem;
+            width: 5rem;
+            text-align: center;
+            @include main-font(3rem);
+            margin-left: 1rem;
+        }
+        h2 {
+            @include title-font(2rem, .5rem);
+            color:$heading-color;
+            text-align: start;
+        }
+    }
+
+    /* Paso 1 */
 
     .comocomprar__paso1--img {@include flex(column, center);}
+
+    /* Paso 2 */
+
+    .comocomprar__paso2--img {
+        img {
+            width: 80%;
+            height: auto;
+            margin:1rem 1rem 3rem 1rem;
+        }
+    }
+
+    /* Paso 3 */
 
     .comocomprar__paso3--2 {@include flex(column, center);
         .comocomprar__entrega {
