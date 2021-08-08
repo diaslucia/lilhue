@@ -26,6 +26,7 @@
         color:$text-color;
         padding: 1rem;
         margin: 0rem 8rem 1rem 2rem;
+        strong {color:$bold-color; text-shadow: 1px 0px 1px $text-color;}
     }
     margin-bottom: 4rem;
 }

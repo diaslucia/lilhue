@@ -56,6 +56,7 @@ body {background-image:url(../assets/img/fondo.jpg);}
             padding: 0.5rem;
             margin: 1rem 3rem 1rem 3rem;
             line-height: 2.5rem;
+            strong {color:$bold-color; text-shadow: 1px 0px 1px $text-color;}
         }
     }
     .home__photosRight {
@@ -161,7 +162,8 @@ body {background-image:url(../assets/img/fondo.jpg);}
 
         .home__slogan {
             h3 {line-height: 4rem;}
-            p {margin-bottom: 9rem;}}
+            p {margin-bottom: 8rem;}
+        }
 
         .home__photosRight {
             .home__photoRight--wallpaper {display:none;}

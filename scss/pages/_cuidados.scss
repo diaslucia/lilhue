@@ -29,12 +29,14 @@
         color:$text-color;
         padding: 1rem;
         margin: 2rem;
+        strong {color:$bold-color; text-shadow: 1px 0px 1px $text-color;}
     }
     li {
         @include info-font(1.5rem);
         color:$text-color;
         margin: 1rem 3rem 2rem 8rem;
         line-height: 2rem;
+        strong {color:$bold-color; text-shadow: 1px 0px 1px $text-color;}
     }
     .cuidados__img--mobile {
         display:none;

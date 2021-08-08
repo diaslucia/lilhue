@@ -269,6 +269,9 @@ body {
       padding: 0.5rem;
       margin: 1rem 3rem 1rem 3rem;
       line-height: 2.5rem; }
+      .home .home__slogan p strong {
+        color: #240b02;
+        text-shadow: 1px 0px 1px #3d2515; }
   .home .home__photosRight .home__photoRight--wallpaper {
     position: absolute;
     z-index: -1;
@@ -368,7 +371,7 @@ body {
     .home .home__slogan h3 {
       line-height: 4rem; }
     .home .home__slogan p {
-      margin-bottom: 9rem; }
+      margin-bottom: 8rem; }
     .home .home__photosRight .home__photoRight--wallpaper {
       display: none; }
     .home .home__photosRight .home__photoRight--wallpapermobile {
@@ -441,6 +444,9 @@ body {
     color: #3d2515;
     padding: 1rem;
     margin: 0rem 8rem 1rem 2rem; }
+    .nosotras__info p strong {
+      color: #240b02;
+      text-shadow: 1px 0px 1px #3d2515; }
 
 /* MOBILE -------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
@@ -549,6 +555,9 @@ body {
   color: #3d2515;
   padding: 1rem;
   margin: 2rem; }
+  .cuidados p strong {
+    color: #240b02;
+    text-shadow: 1px 0px 1px #3d2515; }
 
 .cuidados li {
   font-family: "Space Mono", monospace;
@@ -559,6 +568,9 @@ body {
   color: #3d2515;
   margin: 1rem 3rem 2rem 8rem;
   line-height: 2rem; }
+  .cuidados li strong {
+    color: #240b02;
+    text-shadow: 1px 0px 1px #3d2515; }
 
 .cuidados .cuidados__img--mobile {
   display: none; }
@@ -824,6 +836,15 @@ h1 {
   color: #30170e;
   margin: 2rem 3rem;
   text-align: center; }
+  h1 strong {
+    color: #240b02;
+    text-shadow: 1px 0px 1px #3d2515; }
+    h1 strong a {
+      color: #30170e;
+      text-decoration: none; }
+      h1 strong a a:hover {
+        color: #30170e;
+        text-decoration: none; }
 
 .comocomprar__formwp {
   display: flex;

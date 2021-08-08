@@ -7,6 +7,11 @@ h1 {
     color:$heading-color;
     margin: 2rem 3rem;
     text-align: center;
+        strong {color:$bold-color; text-shadow: 1px 0px 1px $text-color;
+            a {color:$heading-color; text-decoration: none;
+                a:hover {color:$heading-color; text-decoration: none;}
+            }
+        }
 }
 .comocomprar__formwp {
     @include flex(row, space-evenly);
