@@ -126,6 +126,51 @@ html {
         .nav__nav .nav__menu2 ul li a {
           color: whitesmoke; } }
 
+/* TABLET -------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .nav__nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 3rem !important; }
+    .nav__nav .mytoggle {
+      position: absolute;
+      left: 3rem;
+      top: 13rem;
+      font-size: 2rem;
+      padding-top: 1rem;
+      border-radius: 50%;
+      color: #a38c8c !important;
+      background-color: whitesmoke !important; }
+    .nav__nav .nav__logo {
+      order: 0;
+      margin: -2rem 0rem; }
+    .nav__nav .nav__menu1 {
+      order: 1;
+      margin-top: 3rem; }
+      .nav__nav .nav__menu1 ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        .nav__nav .nav__menu1 ul li:hover {
+          color: #d2c2be; }
+        .nav__nav .nav__menu1 ul li a {
+          color: whitesmoke; }
+    .nav__nav .nav__menu2 {
+      order: 2; }
+      .nav__nav .nav__menu2 ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        .nav__nav .nav__menu2 ul li:hover {
+          color: #d2c2be; }
+        .nav__nav .nav__menu2 ul li a {
+          color: whitesmoke; } }
+
 /* Footer container */
 .footer {
   background-color: #a38c8c;
@@ -213,6 +258,31 @@ ul {
     letter-spacing: .3rem;
     font-size: 1.5rem; } }
 
+/* TABLET -------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* Primer DIV con logo y slogan */
+  .footer__div .footer__logo {
+    height: 8rem;
+    width: 8rem;
+    margin-top: 1rem; }
+  .footer__div .footer__slogan {
+    font-family: "Space Mono", monospace;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    text-align: start;
+    margin: 1rem 0rem 0rem 1rem; }
+  /* Redes Sociales y Contacto */
+  .footer__title {
+    font-family: "Space Mono", monospace, !important;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: .5rem; }
+  ul li {
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.4rem; } }
+
 /* Inicio home */
 body {
   background-image: url(../assets/img/fondo.jpg); }
@@ -223,15 +293,13 @@ body {
   justify-content: center;
   flex-direction: row; }
   .home .home__photosLeft .home__photoLeft--wallpaper {
+    display: inline-flex;
     position: absolute;
     z-index: -1;
-    top: -25px;
-    left: 20px;
-    margin: .5rem;
-    width: 100%;
+    top: 1px;
+    left: 5px;
+    width: 98%;
     height: auto; }
-  .home .home__photosLeft .home__photoLeft--wallpapermobile {
-    display: none; }
   .home .home__photosLeft img {
     width: 40%;
     height: auto;
@@ -240,23 +308,18 @@ body {
     margin-top: 1rem;
     margin-left: 2rem; }
   .home .home__photosLeft .home__img2 {
-    margin-top: 8rem;
+    margin-top: 11rem;
     margin-left: 1rem; }
   .home .home__photosLeft .home__photoLeft--flower {
-    position: absolute;
-    z-index: 2;
-    top: -30px;
-    left: 300px;
-    height: auto;
-    width: 130px; }
+    display: none; }
   .home .home__slogan {
     color: #30170e;
     font-family: "Space Mono", monospace; }
     .home .home__slogan h3 {
-      font-weight: bolder;
+      text-align: start;
       letter-spacing: .8rem;
       padding: 1rem;
-      margin: 2rem 0.5rem .5rem 0.5rem;
+      margin: 2rem .5rem .5rem .5rem;
       font-size: 3rem;
       line-height: 4rem;
       text-shadow: 2px 2px 1px #d2c2be; }
@@ -273,15 +336,13 @@ body {
         color: #240b02;
         text-shadow: 1px 0px 1px #3d2515; }
   .home .home__photosRight .home__photoRight--wallpaper {
+    display: inline-flex;
     position: absolute;
     z-index: -1;
-    top: -25px;
-    right: 20px;
-    margin: .5rem;
-    width: 100%;
+    top: 1px;
+    right: 5px;
+    width: 98%;
     height: auto; }
-  .home .home__photosRight .home__photoRight--wallpapermobile {
-    display: none; }
   .home .home__photosRight img {
     width: 38%;
     height: auto;
@@ -292,13 +353,6 @@ body {
   .home .home__photosRight .home__img4 {
     margin-top: 5rem;
     margin-right: -1rem; }
-  .home .home__photosRight .home__photoRight--flower {
-    position: absolute;
-    z-index: 2;
-    top: 150px;
-    right: 350px;
-    height: 170px;
-    width: auto; }
 
 /* Inicio Cubos */
 .home__card1, .home__card2, .home__card3 {
@@ -349,13 +403,11 @@ body {
     justify-content: center;
     flex-direction: column; }
     .home .home__photosLeft .home__photoLeft--wallpaper {
-      display: none; }
-    .home .home__photosLeft .home__photoLeft--wallpapermobile {
       display: block;
       position: absolute;
       z-index: -1;
       top: 1px;
-      left: 20px;
+      left: 5px;
       width: 90%;
       height: auto; }
     .home .home__photosLeft img {
@@ -366,20 +418,21 @@ body {
     .home .home__photosLeft .home__img2 {
       margin-top: 12rem;
       margin-left: .5rem; }
-    .home .home__photosLeft .home__photoLeft--flower {
-      display: none; }
     .home .home__slogan h3 {
-      line-height: 4rem; }
+      line-height: 3rem;
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 2.8rem; }
     .home .home__slogan p {
-      margin-bottom: 8rem; }
+      margin-bottom: 8rem;
+      margin: 1rem .5rem 7rem .5rem;
+      font-size: 1.8rem; }
     .home .home__photosRight .home__photoRight--wallpaper {
-      display: none; }
-    .home .home__photosRight .home__photoRight--wallpapermobile {
       display: block;
       position: absolute;
       z-index: -1;
       top: 1px;
-      left: 20px;
+      left: 5px;
       width: 90%;
       height: auto; }
     .home .home__photosRight img {
@@ -390,8 +443,6 @@ body {
     .home .home__photosRight .home__img4 {
       margin-top: 6rem;
       margin-bottom: 9rem; }
-    .home .home__photosRight .home__photoRight--flower {
-      display: none; }
   .cards {
     display: flex;
     align-items: center;
@@ -407,6 +458,58 @@ body {
     text-transform: uppercase;
     letter-spacing: .3rem;
     font-size: 1.8rem; } }
+
+/* TABLET -------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .home .home__photosLeft .home__photoLeft--wallpaper {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 1px;
+    left: 5px;
+    width: 70%;
+    height: auto; }
+  .home .home__photosLeft img {
+    width: 25%; }
+  .home .home__photosLeft .home__img1 {
+    margin-top: 2rem;
+    margin-left: 7rem; }
+  .home .home__photosLeft .home__img2 {
+    margin-top: 15rem;
+    margin-left: .5rem; }
+  .home .home__slogan h3 {
+    line-height: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.8rem; }
+  .home .home__slogan p {
+    margin-bottom: 8rem;
+    margin: 1rem 3rem 4rem 3rem;
+    font-size: 1.8rem; }
+  .home .home__photosRight .home__photoRight--wallpaper {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 1px;
+    right: 5px;
+    width: 70%;
+    height: auto; }
+  .home .home__photosRight img {
+    width: 25%; }
+  .home .home__photosRight .home__img3 {
+    margin-bottom: 12rem;
+    margin-left: 25rem; }
+  .home .home__photosRight .home__img4 {
+    margin-top: 6rem;
+    margin-bottom: 15rem; }
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .home__card1, .home__card2, .home__card3 {
+    margin: 1rem;
+    border-radius: 25%; } }
 
 /* PÁGINA NOSOTRAS */
 .nosotras__img {
@@ -482,6 +585,16 @@ body {
       padding: 1rem;
       margin: 0rem 1rem 2rem 1rem; } }
 
+/* TABLET -------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .nosotras__img .nosotras__wallpaper {
+    width: 25rem;
+    height: auto; }
+  .nosotras__img img {
+    height: auto;
+    width: 20rem;
+    margin: 4rem 0rem 3rem 0rem; } }
+
 .galeria {
   margin-top: 2rem; }
   .galeria div {
@@ -510,6 +623,22 @@ body {
       height: auto;
       width: 95%;
       margin: 0.5rem; }
+      .galeria img:hover {
+        transform: scale(1.02, 1.02); } }
+
+/* TABLET -------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .galeria {
+    margin-top: 1rem; }
+    .galeria div {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row; }
+    .galeria img {
+      height: auto;
+      width: 80%;
+      margin: 0.8rem; }
       .galeria img:hover {
         transform: scale(1.02, 1.02); } }
 
@@ -609,6 +738,41 @@ body {
       height: auto;
       width: 50vw;
       margin: 1rem; } }
+
+/* TABLET -------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .cuidados--padding {
+    padding: 0rem; }
+  .cuidados__row {
+    margin: 0rem; }
+  .cuidados__img {
+    display: none; }
+  .cuidados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; }
+    .cuidados .cuidados__title--wallpaper .cuidados__title {
+      font-family: "Space Mono", monospace;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.8rem;
+      letter-spacing: 0.1rem;
+      width: 100%;
+      padding: 1rem;
+      margin: 1.5rem 0rem; }
+    .cuidados p {
+      margin: .5rem 4rem; }
+    .cuidados li {
+      max-width: 75%;
+      margin: 1.5rem 1.5rem 1.5rem 8rem; }
+    .cuidados .cuidados__img--mobile {
+      display: inline-block;
+      height: auto;
+      width: 20vw;
+      margin: 1rem 0rem 3rem 0rem; } }
 
 .contacto--padding {
   padding: 0rem; }
@@ -742,6 +906,13 @@ body {
       max-width: 90%; }
   #form__set {
     font-size: 1.2rem; } }
+
+/* TABLET -------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .form__img img {
+    display: none; }
+  .form {
+    margin-left: 10rem; } }
 
 .buttonStyle {
   background-color: #d39285;
@@ -989,30 +1160,39 @@ h2 {
 
 /* MOBILE -------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  /* General */
+  h1 {
+    font-family: "Space Mono", monospace, !important;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 1.8rem;
+    margin: 2rem; }
   .comocomprar__row, .comocomprar__container-fluid, .columns {
     padding: 0rem;
     margin: 0rem; }
   .comocomprar__paso .comocomprar__num {
-    background-color: #a38c8c;
-    border-radius: 50%;
-    color: #f0ede8;
-    height: 5rem;
-    width: 5rem;
-    text-align: center;
+    height: 4.5rem;
+    width: 4.5rem;
     font-family: "Space Mono", monospace, !important;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    font-size: 3rem;
-    margin-left: 1rem; }
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem; }
   .comocomprar__paso h2 {
     font-family: "Space Mono", monospace;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    font-size: 2rem;
-    letter-spacing: 0.5rem;
-    color: #30170e;
-    text-align: start; }
+    font-size: 1.7rem;
+    letter-spacing: 0rem; }
+  h3 {
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 1.5rem;
+    word-spacing: 3px; }
   /* Paso 1 */
   .comocomprar__paso1--img {
     display: flex;
@@ -1050,3 +1230,22 @@ h2 {
         flex-direction: column; }
         .comocomprar__paso3--2 .comocomprar__modopago .comocomprar__modopago3 img {
           width: 13rem; } }
+
+/* TABLET -------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .comocomprar__paso3--2 .comocomprar__modopago {
+    border-radius: 5%;
+    padding: 1rem;
+    margin: 2rem 0rem 3rem 0rem; }
+    .comocomprar__paso3--2 .comocomprar__modopago .comocomprar__modopago3 img {
+      width: 12rem;
+      height: auto;
+      margin: .5rem; }
+  .comocomprar__paso3--2 .comocomprar__entrega {
+    border-radius: 5%;
+    padding: 1rem;
+    margin: 2rem 0rem 3rem 0rem; }
+    .comocomprar__paso3--2 .comocomprar__entrega .comocomprar__entrega2 img {
+      width: 12rem;
+      height: auto;
+      margin: .5rem; } }

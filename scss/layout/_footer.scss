@@ -58,3 +58,24 @@ ul { list-style-type: none;
     }
     .footer__title {@include main-font(1.5rem);}
 }
+
+/* TABLET -------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    
+    /* Primer DIV con logo y slogan */
+    
+    .footer__div {
+        .footer__logo{height: 8rem; width: 8rem; margin-top:1rem;}
+        .footer__slogan {
+            @include slogan-font(1.2rem);
+            text-align: start;
+            margin: 1rem 0rem 0rem 1rem;
+        }
+    }
+    
+    /* Redes Sociales y Contacto */
+    
+    .footer__title{@include main-font(1.8rem); font-weight: bold; margin:.5rem;}
+    ul {li{@include tertiary-font(1.4rem);}}
+}

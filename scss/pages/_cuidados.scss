@@ -73,3 +73,34 @@
         }
     }
 } 
+
+/* TABLET -------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    .cuidados--padding {padding:0rem;}
+    .cuidados__row {margin:0rem;}
+    .cuidados__img {display:none;}
+    .cuidados {
+        @include flex(column, center);
+        width: 100%;
+        .cuidados__title--wallpaper {
+            .cuidados__title {
+                @include title-font(1.8rem, 0.1rem);
+                width:100%;
+                padding: 1rem;
+                margin: 1.5rem 0rem;
+            } 
+        }
+        p {margin:.5rem 4rem;}
+        li {
+            max-width: 75%;
+            margin: 1.5rem 1.5rem 1.5rem 8rem;}
+        .cuidados__img--mobile {
+            display: inline-block;
+            height:auto;
+            width: 20vw;
+            margin:1rem 0rem 3rem 0rem;
+        }
+    }
+} 

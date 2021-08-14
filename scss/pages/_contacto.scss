@@ -118,3 +118,15 @@
     #form__set{font-size: 1.2rem;}
 
 }
+
+/* TABLET -------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    .form__img {
+        img {
+            display:none;
+        }
+    }
+    .form {margin-left: 10rem;}
+}

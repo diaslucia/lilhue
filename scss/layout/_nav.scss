@@ -112,3 +112,45 @@
         }
     }
 }
+
+/* TABLET -------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .nav__nav {
+        @include flex(column,flex-start);
+        height: auto;
+        margin-bottom: 3rem !important;
+        .mytoggle {
+            position: absolute;
+            left:3rem;
+            top: 13rem;
+            font-size: 2rem;
+            padding-top: 1rem;
+            border-radius: 50%;
+            color:$primary-color !important;
+            background-color: $tertiary-color !important;
+        }
+        .nav__logo {order:0; margin:-2rem 0rem;}
+        .nav__menu1 {
+            order: 1;
+            margin-top: 3rem;
+            ul {
+                @include flex(column,center);
+                li {
+                    &:hover{color:$secondary-color;}
+                    a {color:$tertiary-color;}
+                }
+            } 
+        }
+        .nav__menu2 {
+            order: 2;
+            ul {
+                @include flex(column,center);
+                li {
+                    &:hover{color:$secondary-color;}
+                    a {color:$tertiary-color;}
+                }
+            }
+        }
+    }
+}

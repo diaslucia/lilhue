@@ -142,24 +142,25 @@ h2{
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
 
+    /* General */
+
+    h1 {@include main-font(1.8rem);
+        margin: 2rem;}
+
     .comocomprar__row, .comocomprar__container-fluid, .columns {padding: 0rem; margin:0rem;}
     .comocomprar__paso {
         .comocomprar__num {
-            background-color: $primary-color;
-            border-radius: 50%;
-            color: $background-color2;
-            height: 5rem;
-            width: 5rem;
+            height: 4.5rem;
+            width: 4.5rem;
+            @include main-font(2.5rem);
             text-align: center;
-            @include main-font(3rem);
             margin-left: 1rem;
+            margin-right:1rem;
         }
-        h2 {
-            @include title-font(2rem, .5rem);
-            color:$heading-color;
-            text-align: start;
-        }
+        h2 {@include title-font(1.7rem, 0rem);}
     }
+    
+    h3 {@include info-font(1.5rem);}
 
     /* Paso 1 */
 
@@ -193,3 +194,38 @@ h2{
         }
     }
 } 
+
+/* TABLET -------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    
+.comocomprar__paso3--2 {
+    .comocomprar__modopago {
+        border-radius: 5%;
+        padding: 1rem;
+        margin:2rem 0rem 3rem 0rem;
+        .comocomprar__modopago3 {
+            img {
+                width: 12rem;
+                height: auto;
+                margin:.5rem;
+            }
+        }
+    }
+    .comocomprar__entrega {
+        border-radius: 5%;
+        padding: 1rem;
+        margin:2rem 0rem 3rem 0rem;
+        .comocomprar__entrega2 {
+            img {
+                width: 12rem;
+                height: auto;
+                margin:.5rem; 
+            }
+        }
+    }
+
+}
+
+}
