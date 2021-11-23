@@ -12,7 +12,7 @@ _Lilhué was my first Web Development project. This is my friend's small busines
 
 _Estas son las herramientas que utilicé para mi proyecto_
 
-_This are some of the tools I've used for my project_
+_These are some of the tools I've used for my project_
 
 * [Boostrap](https://getbootstrap.com/) - Grids and Framework
 * [SASS](https://sass-lang.com/) - CSS extension
