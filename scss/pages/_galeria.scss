@@ -28,20 +28,3 @@
     }
     
 } 
-
-/* TABLET -------------------------------------------------------------------------------------*/
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-
-    .galeria {
-        margin-top:1rem;
-        div {@include flex(row, space-evenly);}
-        img {
-            height: auto;
-            width: 80%;
-            margin:0.8rem;
-            &:hover{transform: scale(1.02,1.02);}
-        }
-    }
-
-}

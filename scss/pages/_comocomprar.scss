@@ -7,11 +7,19 @@ h1 {
     color:$heading-color;
     margin: 2rem 3rem;
     text-align: center;
-        strong {color:$bold-color; text-shadow: 1px 0px 1px $text-color;
-            a {color:$heading-color; text-decoration: none;
-                a:hover {color:$heading-color; text-decoration: none;}
+        strong {
+            color:$bold-color;
+            a {
+                color:$heading-color;
+                text-decoration: none;
+                &:hover {
+                    color:$primary-color;
+                    text-decoration: none;
+                    text-shadow: none;
+                }
             }
         }
+        
 }
 .comocomprar__formwp {
     @include flex(row, space-evenly);
@@ -37,6 +45,10 @@ h1 {
     }
 }
 
+.nuevoDiv{
+    padding-bottom: 3rem;
+}
+
 /* General pasos */
 
 .comocomprar__paso {
@@ -47,14 +59,14 @@ h1 {
         background-color: $primary-color;
         border-radius: 50%;
         color: $background-color2;
-        height: 4.5rem;
-        width: 4.5rem;
+        height: 4rem;
+        width: 4rem;
         text-align: center;
-        @include main-font(3rem);
+        @include main-font(2.5rem);
         margin: 1rem 3rem;
     }
     h2 {
-        @include title-font(2.3rem, .5rem);
+        @include title-font(2rem, .5rem);
         color:$heading-color;
     }
 }
@@ -105,7 +117,7 @@ h2{
     .comocomprar__modopago {
         @include flex(column, center);
         background-color: $secondary-color;
-        border-radius: 15%;
+        border-radius: 30px;
         box-shadow: 2px 2px 5px $primary-color;
         padding: 3rem;
         margin:2rem 0rem 4rem 0rem;
@@ -121,7 +133,7 @@ h2{
     .comocomprar__entrega {
         @include flex(column, center);
         background-color: $secondary-color;
-        border-radius: 15%;
+        border-radius: 30px;
         box-shadow: 2px 2px 5px $primary-color;
         padding: 3rem;
         margin:2rem 0rem 4rem 0rem;
@@ -144,8 +156,22 @@ h2{
 
     /* General */
 
-    h1 {@include main-font(1.8rem);
-        margin: 2rem;}
+    h1 {
+        @include main-font(1.6rem);
+        margin: 2rem 0.5rem;
+    }
+    .comocomprar__formwp {
+        .comocomprar__formwp--form, .comocomprar__formwp--wp {
+            height: 8rem;
+            width: 8rem;
+        }
+        a {
+            .comocomprar__icon {
+                font-size: 5rem;
+                margin-top: 1.5rem;
+            }
+        }
+    }
 
     .comocomprar__row, .comocomprar__container-fluid, .columns {padding: 0rem; margin:0rem;}
     .comocomprar__paso {
@@ -157,14 +183,20 @@ h2{
             margin-left: 1rem;
             margin-right:1rem;
         }
-        h2 {@include title-font(1.7rem, 0rem);}
+        h2 {@include title-font(1.6rem, 0rem);}
     }
     
     h3 {@include info-font(1.5rem);}
 
     /* Paso 1 */
 
-    .comocomprar__paso1--img {@include flex(column, center);}
+    .comocomprar__paso1--img {
+        @include flex(column, center);
+        img {
+            width: 12rem;
+            margin:1rem;
+        }
+    }
 
     /* Paso 2 */
 
@@ -180,52 +212,19 @@ h2{
 
     .comocomprar__paso3--2 {@include flex(column, center);
         .comocomprar__entrega {
-            border-radius: 5%;
+            border-radius: 20px;
             width:70%;
+            padding:2rem;
             .comocomprar__entrega2{@include flex(column, center);
-                img {width: 13rem;}}
+                img {width: 12rem;}}
         }
     
         .comocomprar__modopago {
-            border-radius: 5%;
+            border-radius: 20px;
             width:70%;
+            padding: 2rem;
             .comocomprar__modopago3{@include flex(column, center);
-                img {width: 13rem;}}
+                img {width: 12rem;}}
         }
     }
 } 
-
-/* TABLET -------------------------------------------------------------------------------------*/
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-
-    
-.comocomprar__paso3--2 {
-    .comocomprar__modopago {
-        border-radius: 5%;
-        padding: 1rem;
-        margin:2rem 0rem 3rem 0rem;
-        .comocomprar__modopago3 {
-            img {
-                width: 12rem;
-                height: auto;
-                margin:.5rem;
-            }
-        }
-    }
-    .comocomprar__entrega {
-        border-radius: 5%;
-        padding: 1rem;
-        margin:2rem 0rem 3rem 0rem;
-        .comocomprar__entrega2 {
-            img {
-                width: 12rem;
-                height: auto;
-                margin:.5rem; 
-            }
-        }
-    }
-
-}
-
-}

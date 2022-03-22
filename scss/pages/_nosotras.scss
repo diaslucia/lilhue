@@ -48,7 +48,7 @@
     .nosotras__info {
         @include flex(column, center);
         h3 {
-            @include title-font(2.3rem, 1.5rem);
+            @include title-font(2rem, 1.5rem);
             color:$heading-color;
             padding: 1rem;
             margin-top: 5.5rem;
@@ -62,21 +62,3 @@
         margin-bottom: 2rem;
     }
 } 
-
-/* TABLET -------------------------------------------------------------------------------------*/
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-
-    .nosotras__img {
-        .nosotras__wallpaper {
-        width:25rem;
-        height:auto;
-        }
-        img{
-            height:auto;
-            width:20rem;
-            margin:4rem 0rem 3rem 0rem;
-        }
-    }
-
-}

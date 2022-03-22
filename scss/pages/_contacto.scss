@@ -9,13 +9,16 @@
     }
 }
 
+.columnasform{
+    width: auto;
+}
 .form {
     margin-left: 4rem;
     .form__title h1 {
-        @include title-font(3rem, 1.1rem);
+        @include title-font(2.8rem, 1rem);
         color:$heading-color;
-        padding: 1.5rem;
-        margin: 2rem 2rem 2rem -4rem;
+        padding: 0rem;
+        margin: 0rem 0rem 4.5rem 0rem;
     }
     .form__subtitle {
         @include title-font(1.5rem, .3rem);
@@ -67,7 +70,7 @@
     width: 1.5rem;
     height: 1.5rem;
     border: 1px solid $primary-color;
-    border-radius: 50%;
+    border-radius: 0%;
     margin-right: 10px;
     box-sizing: border-box;
     padding: 2px;
@@ -117,16 +120,4 @@
     }
     #form__set{font-size: 1.2rem;}
 
-}
-
-/* TABLET -------------------------------------------------------------------------------------*/
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-
-    .form__img {
-        img {
-            display:none;
-        }
-    }
-    .form {margin-left: 10rem;}
 }
