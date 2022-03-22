@@ -24,12 +24,14 @@
         @include title-font(1.5rem, .3rem);
         text-align: start;
         color:$heading-color;
-        margin: 1.5rem 0.5rem;
+        margin: 0rem;
+        padding: 2.5rem 0rem 1rem 0rem;
     }
     .form__data {
         @include main-font(1.5rem);
         color:$text-color;
-        margin: .5rem 0.5rem;
+        margin: 0rem;
+        padding: 1rem 0rem .5rem 0rem;
         text-align: center;
     }
     .form__info--input {

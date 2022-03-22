@@ -17,3 +17,27 @@ _These are some of the tools I've used for my project_
 * [Boostrap](https://getbootstrap.com/) - Grids and Framework
 * [SASS](https://sass-lang.com/) - CSS extension
 * [AOS](https://michalsnik.github.io/aos/) - Animations
+
+## Instalación y Ejecución / Instalation & Ejecution 🚀
+
+_Pasos para instalar y ejecutar el proyecto:_
+
+_Steps to install and run the project:_
+
+1. Clona el proyecto / Clone the project
+```
+$git clone https://github.com/diaslucia/lilhue.git
+```
+2. Ir al directorio del proyecto / Go to the project directory
+```
+$cd lilhue
+```
+
+3. Instalar SASS Nodemon / Install SASS Nodemon
+```
+$npm install node-sass nodemon
+```
+4. Abrir el compilador de sass cada vez que uses el proyecto / Open sass compilator every time you open the project
+```
+$npm run watch-css
+```

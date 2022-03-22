@@ -1,7 +1,7 @@
 .buttonStyle {
     background-color:$accent-color;
     color:$tertiary-color;
-    @include main-font(1.4rem);
+    @include main-font(1.6rem);
     padding: 0.3rem 2.5rem;
     border: 0;
     box-shadow: 1px 1px 2px $primary-color;

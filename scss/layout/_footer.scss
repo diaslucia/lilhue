@@ -2,9 +2,9 @@
 
 .footer {
     background-color: #a38c8c;
-    margin-top:3rem;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
 
     .footer__seccion{
         @include flex(row, space-around);

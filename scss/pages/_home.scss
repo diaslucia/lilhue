@@ -84,7 +84,7 @@ body {background-image:url(../assets/img/fondo.jpg);}
 
 .cubosContenedorPrincipal {
     @include flex(row, space-around);
-    margin-top: 6rem;
+    margin-top: 10rem;
     .cubo{
         @include flex(row, space-between);
         background-color:$secondary-color;
