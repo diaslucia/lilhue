@@ -600,7 +600,7 @@ body {
       flex-direction: row; }
     .galeria img {
       height: auto;
-      width: 95%;
+      width: 60%;
       margin: 0.5rem; }
       .galeria img:hover {
         transform: scale(1.02, 1.02); } }

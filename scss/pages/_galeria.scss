@@ -21,7 +21,7 @@
         div {@include flex(row, space-evenly);}
         img {
             height: auto;
-            width: 95%;
+            width: 60%;
             margin:0.5rem;
             &:hover{transform: scale(1.02,1.02);}
         }

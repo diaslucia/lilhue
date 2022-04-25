@@ -22,7 +22,7 @@ html {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #a38c8c;
-  width: 100vw;
+  width: 100%;
   height: 10rem;
   margin-top: 7rem;
   margin-bottom: 8rem;
@@ -49,9 +49,9 @@ html {
   font-family: "Space Mono", monospace, !important;
   text-transform: uppercase;
   letter-spacing: .3rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding: 1rem;
-  margin: 0rem 2rem;
+  margin: 0rem .5rem;
 }
 
 .nav__nav .nav__menu1 ul li a {
@@ -62,7 +62,6 @@ html {
 .nav__nav .nav__menu1 ul li a:hover {
   color: #d2c2be;
   font-weight: normal !important;
-  letter-spacing: .3rem;
 }
 
 .nav__nav .nav__logo img {
@@ -90,9 +89,9 @@ html {
   font-family: "Space Mono", monospace, !important;
   text-transform: uppercase;
   letter-spacing: .3rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding: 1rem;
-  margin: 0rem 2rem;
+  margin: 0rem .5rem;
 }
 
 .nav__nav .nav__menu2 ul li a {
@@ -103,12 +102,11 @@ html {
 .nav__nav .nav__menu2 ul li a:hover {
   color: #d2c2be;
   font-weight: normal !important;
-  letter-spacing: .3rem;
 }
 
 .nav__nav .nav__menu2 .nav__menu2--dropdown {
   background-color: #a38c8c;
-  padding-right: 100%;
+  padding-right: auto;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border: none;
@@ -122,7 +120,7 @@ html {
   font-family: "Space Mono", monospace, !important;
   text-transform: uppercase;
   letter-spacing: .3rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .nav__nav .nav__menu2 .nav__menu2--dropdown .dropdown-item:hover {
@@ -323,9 +321,9 @@ html {
 /* Footer */
 .footer {
   background-color: #a38c8c;
-  margin-top: 3rem;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
 }
 
 .footer .footer__seccion {
@@ -680,7 +678,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 
 .cubosContenedorPrincipal .cubo {
@@ -1048,7 +1046,7 @@ body {
   }
   .galeria img {
     height: auto;
-    width: 95%;
+    width: 60%;
     margin: 0.5rem;
   }
   .galeria img:hover {
@@ -1223,6 +1221,10 @@ body {
   margin-left: 3rem;
 }
 
+.columnasform {
+  width: auto;
+}
+
 .form {
   margin-left: 4rem;
 }
@@ -1232,11 +1234,11 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  font-size: 3rem;
-  letter-spacing: 1.1rem;
+  font-size: 2.8rem;
+  letter-spacing: 1rem;
   color: #30170e;
-  padding: 1.5rem;
-  margin: 2rem 2rem 2rem -4rem;
+  padding: 0rem;
+  margin: 0rem 0rem 4.5rem 0rem;
 }
 
 .form .form__subtitle {
@@ -1248,7 +1250,8 @@ body {
   letter-spacing: 0.3rem;
   text-align: start;
   color: #30170e;
-  margin: 1.5rem 0.5rem;
+  margin: 0rem;
+  padding: 2.5rem 0rem 1rem 0rem;
 }
 
 .form .form__data {
@@ -1257,7 +1260,8 @@ body {
   letter-spacing: .3rem;
   font-size: 1.5rem;
   color: #3d2515;
-  margin: .5rem 0.5rem;
+  margin: 0rem;
+  padding: 1rem 0rem .5rem 0rem;
   text-align: center;
 }
 
@@ -1320,7 +1324,7 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   border: 1px solid #a38c8c;
-  border-radius: 50%;
+  border-radius: 0%;
   margin-right: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1392,7 +1396,7 @@ body {
   font-family: "Space Mono", monospace, !important;
   text-transform: uppercase;
   letter-spacing: .3rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 0.3rem 2.5rem;
   border: 0;
   -webkit-box-shadow: 1px 1px 2px #a38c8c;
@@ -1528,7 +1532,6 @@ h1 {
 
 h1 strong {
   color: #240b02;
-  text-shadow: 1px 0px 1px #3d2515;
 }
 
 h1 strong a {
@@ -1536,9 +1539,10 @@ h1 strong a {
   text-decoration: none;
 }
 
-h1 strong a a:hover {
-  color: #30170e;
+h1 strong a:hover {
+  color: #a38c8c;
   text-decoration: none;
+  text-shadow: none;
 }
 
 .comocomprar__formwp {
@@ -1585,6 +1589,10 @@ h1 strong a a:hover {
   color: #d2c2be;
 }
 
+.nuevoDiv {
+  padding-bottom: 3rem;
+}
+
 /* General pasos */
 .comocomprar__paso {
   background: -webkit-gradient(linear, right top, left top, from(#f0ede8), to(#e0dad9));
@@ -1609,13 +1617,13 @@ h1 strong a a:hover {
   background-color: #a38c8c;
   border-radius: 50%;
   color: #f0ede8;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 4rem;
+  width: 4rem;
   text-align: center;
   font-family: "Space Mono", monospace, !important;
   text-transform: uppercase;
   letter-spacing: .3rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 1rem 3rem;
 }
 
@@ -1624,7 +1632,7 @@ h1 strong a a:hover {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 2rem;
   letter-spacing: 0.5rem;
   color: #30170e;
 }
