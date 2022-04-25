@@ -21,7 +21,7 @@
 @media screen and (min-width: 0px) and (max-width: 767px) {
 
     .buttonStyle {
-        @include main-font(1.2rem);
+        @include main-font(1.5rem);
         padding: 0.3rem 1.3rem;
         border: 0;
         letter-spacing:.5px;

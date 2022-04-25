@@ -26,6 +26,7 @@
             @include flex(row, center);
             .footer__title{
                 @include tertiary-font(1.8rem);
+                font-weight: bold;
                 color: $tertiary-color;
                 letter-spacing: 0.3px;
                 font-weight: 400;
@@ -53,6 +54,7 @@
             @include flex(row, center);
             .footer__title{
                 @include tertiary-font(1.8rem);
+                font-weight: bold;
                 color: $tertiary-color;
                 letter-spacing: 0.3px;
                 font-weight: 400;
@@ -85,6 +87,8 @@
 @media screen and (min-width: 0px) and (max-width: 767px) {
     
     .footer {
+        padding-bottom: 3rem;
+        padding-top: 2rem;
         .footer__seccion{
             @include flex(column, flex-start);
             align-items: flex-start;
@@ -110,7 +114,8 @@
             }
             .footer__seguinos{
                 .footer__title{
-                    @include tertiary-font(1.5rem);
+                    @include tertiary-font(1.6rem);
+                    font-weight: bold;
                     letter-spacing: 0.3px;
                     margin:1rem;
                 }
@@ -122,7 +127,8 @@
             }
             .footer__escribinos{
                 .footer__title{
-                    @include tertiary-font(1.5rem);
+                    @include tertiary-font(1.6rem);
+                    font-weight: bold;
                     letter-spacing: 0.3px;
                     margin:1rem;
                 }
@@ -155,6 +161,7 @@
             .footer__seguinos{
                 .footer__title{
                     @include tertiary-font(1.5rem);
+                    font-weight: bold;
                 }
                 a{
                     #instaLogo {
@@ -165,6 +172,7 @@
             .footer__escribinos{
                 .footer__title{
                     @include tertiary-font(1.5rem);
+                    font-weight: bold;
                 }
                 a{
                     #whatssapLogo{

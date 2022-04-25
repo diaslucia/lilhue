@@ -51,7 +51,7 @@ body {background-image:url(../assets/img/fondo.jpg);}
             padding: 0.5rem;
             margin: 1rem 3rem 1rem 3rem;
             line-height: 2.5rem;
-            strong {color:$bold-color; text-shadow: 1px 0px 1px $text-color;}
+            strong {color:$text-color; text-shadow: 1px 0px 1px $text-color;}
         }
     }
 
@@ -196,7 +196,7 @@ body {background-image:url(../assets/img/fondo.jpg);}
             .textoCubo{
                 @include flex(column, center);
                 h1{
-                    @include main-font(1.3rem);
+                    @include main-font(1.5rem);
                     margin: 0rem;
                     margin-bottom: 1.5rem;
                 }

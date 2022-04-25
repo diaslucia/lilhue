@@ -206,6 +206,7 @@ html {
       .footer .footer__seccion .footer__seguinos .footer__title {
         font-family: "Source Code Pro", monospace;
         font-size: 1.8rem;
+        font-weight: bold;
         color: whitesmoke;
         letter-spacing: 0.3px;
         font-weight: 400;
@@ -230,6 +231,7 @@ html {
       .footer .footer__seccion .footer__escribinos .footer__title {
         font-family: "Source Code Pro", monospace;
         font-size: 1.8rem;
+        font-weight: bold;
         color: whitesmoke;
         letter-spacing: 0.3px;
         font-weight: 400;
@@ -249,44 +251,49 @@ html {
 
 /* MOBILE -------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  .footer .footer__seccion {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 1rem; }
-    .footer .footer__seccion .footer__div {
-      margin: 1rem; }
-      .footer .footer__seccion .footer__div a {
-        padding: 0rem; }
-        .footer .footer__seccion .footer__div a .footer__logo {
-          height: 8rem;
-          width: 8rem; }
-      .footer .footer__seccion .footer__div .footer__slogan {
-        font-family: "Space Mono", monospace;
-        letter-spacing: 0.2rem;
-        font-size: 1.4rem;
-        margin: 0rem;
-        padding: 0rem 0rem 0rem 2rem;
-        width: 70%;
-        letter-spacing: 0px;
-        word-spacing: 0px;
-        font-weight: 300; }
-    .footer .footer__seccion .footer__seguinos .footer__title {
-      font-family: "Source Code Pro", monospace;
-      font-size: 1.5rem;
-      letter-spacing: 0.3px;
-      margin: 1rem; }
-    .footer .footer__seccion .footer__seguinos a #instaLogo {
-      font-size: 1.8rem; }
-    .footer .footer__seccion .footer__escribinos .footer__title {
-      font-family: "Source Code Pro", monospace;
-      font-size: 1.5rem;
-      letter-spacing: 0.3px;
-      margin: 1rem; }
-    .footer .footer__seccion .footer__escribinos a #whatssapLogo {
-      font-size: 1.8rem; } }
+  .footer {
+    padding-bottom: 3rem;
+    padding-top: 2rem; }
+    .footer .footer__seccion {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 1rem; }
+      .footer .footer__seccion .footer__div {
+        margin: 1rem; }
+        .footer .footer__seccion .footer__div a {
+          padding: 0rem; }
+          .footer .footer__seccion .footer__div a .footer__logo {
+            height: 8rem;
+            width: 8rem; }
+        .footer .footer__seccion .footer__div .footer__slogan {
+          font-family: "Space Mono", monospace;
+          letter-spacing: 0.2rem;
+          font-size: 1.4rem;
+          margin: 0rem;
+          padding: 0rem 0rem 0rem 2rem;
+          width: 70%;
+          letter-spacing: 0px;
+          word-spacing: 0px;
+          font-weight: 300; }
+      .footer .footer__seccion .footer__seguinos .footer__title {
+        font-family: "Source Code Pro", monospace;
+        font-size: 1.6rem;
+        font-weight: bold;
+        letter-spacing: 0.3px;
+        margin: 1rem; }
+      .footer .footer__seccion .footer__seguinos a #instaLogo {
+        font-size: 1.8rem; }
+      .footer .footer__seccion .footer__escribinos .footer__title {
+        font-family: "Source Code Pro", monospace;
+        font-size: 1.6rem;
+        font-weight: bold;
+        letter-spacing: 0.3px;
+        margin: 1rem; }
+      .footer .footer__seccion .footer__escribinos a #whatssapLogo {
+        font-size: 1.8rem; } }
 
 /* TABLET -------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -298,12 +305,14 @@ html {
     margin: 1rem 0rem 0rem 1rem; }
   .footer .footer__seccion .footer__seguinos .footer__title {
     font-family: "Source Code Pro", monospace;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    font-weight: bold; }
   .footer .footer__seccion .footer__seguinos a #instaLogo {
     font-size: 2.2rem; }
   .footer .footer__seccion .footer__escribinos .footer__title {
     font-family: "Source Code Pro", monospace;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    font-weight: bold; }
   .footer .footer__seccion .footer__escribinos a #whatssapLogo {
     font-size: 2.4rem; } }
 
@@ -357,7 +366,7 @@ body {
       margin: 1rem 3rem 1rem 3rem;
       line-height: 2.5rem; }
       .home .home__slogan p strong {
-        color: #240b02;
+        color: #3d2515;
         text-shadow: 1px 0px 1px #3d2515; }
   .home .home__photosRight .home__photoRight--wallpaper {
     display: inline-flex;
@@ -496,7 +505,7 @@ body {
           font-family: "Space Mono", monospace, !important;
           text-transform: uppercase;
           letter-spacing: .3rem;
-          font-size: 1.3rem;
+          font-size: 1.5rem;
           margin: 0rem;
           margin-bottom: 1.5rem; } }
 
@@ -537,7 +546,7 @@ body {
     padding: 1rem;
     margin: 0rem 8rem 1rem 2rem; }
     .nosotras__info p strong {
-      color: #240b02;
+      color: #3d2515;
       text-shadow: 1px 0px 1px #3d2515; }
 
 /* MOBILE -------------------------------------------------------------------------------------*/
@@ -642,13 +651,13 @@ body {
   font-family: "Space Mono", monospace;
   font-weight: bold;
   text-align: justify;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   word-spacing: 3px;
   color: #3d2515;
   padding: 1rem;
   margin: 2rem; }
   .cuidados p strong {
-    color: #240b02;
+    color: #3d2515;
     text-shadow: 1px 0px 1px #3d2515; }
 
 .cuidados li {
@@ -661,7 +670,7 @@ body {
   margin: 1rem 3rem 2rem 8rem;
   line-height: 2rem; }
   .cuidados li strong {
-    color: #240b02;
+    color: #3d2515;
     text-shadow: 1px 0px 1px #3d2515; }
 
 .cuidados .cuidados__img--mobile {
@@ -692,6 +701,11 @@ body {
       padding: 1rem;
       margin: 1.5rem 0rem; }
     .cuidados p {
+      font-family: "Space Mono", monospace;
+      font-weight: bold;
+      text-align: justify;
+      font-size: 1.5rem;
+      word-spacing: 3px;
       margin: 1.5rem; }
     .cuidados li {
       max-width: 75%;
@@ -775,8 +789,6 @@ body {
     margin: 1rem 0rem; }
     .form .form__attachImg:active {
       border: 0.1rem solid #a38c8c; }
-  .form button {
-    margin: 2rem 2rem 2rem 1rem; }
 
 /* EDICIÓN DE BOTONES CHECKBOX */
 .radio {
@@ -871,7 +883,7 @@ body {
     font-family: "Space Mono", monospace, !important;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0.3rem 1.3rem;
     border: 0;
     letter-spacing: .5px;
@@ -934,7 +946,7 @@ h1 {
   margin: 2rem 3rem;
   text-align: center; }
   h1 strong {
-    color: #240b02; }
+    color: #30170e; }
     h1 strong a {
       color: #30170e;
       text-decoration: none; }
