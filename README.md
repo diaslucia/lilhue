@@ -1,8 +1,8 @@
-# Lilhué 
+# Lilhué 🧉
 
 ## Español / English
 
-### Descripción / Description 🚀
+## Descripción / Description 🚀
 
 _Lilhué fue mi primer sitio web que realicé para Desarrollo Web. El emprendimiento es de unas amigas que pintan mates, cuadros y más!_
 
