@@ -10,23 +10,15 @@ _Lilhué was my first Web Development project. This is my friend's small busines
 
 ## Website Deploy 🏁
 
-https://cirse.netlify.app/
+https://lilhue.netlify.app/
 
 ## Herramientas / Tools 🛠️
 
-_Estas son las herramientas que utilicé para mi proyecto_
-
-_These are some of the tools I've used for my project_
-
-* [Boostrap](https://getbootstrap.com/) - Grids and Framework
-* [SASS](https://sass-lang.com/) - CSS extension
-* [AOS](https://michalsnik.github.io/aos/) - Animations
+* [Boostrap](https://getbootstrap.com/)
+* [SASS](https://sass-lang.com/)
+* [AOS](https://michalsnik.github.io/aos/)
 
 ## Instalación y Ejecución / Instalation & Ejecution 🚀
-
-_Pasos para instalar y ejecutar el proyecto:_
-
-_Steps to install and run the project:_
 
 1. Clona el proyecto / Clone the project
 ```
@@ -36,7 +28,6 @@ $git clone https://github.com/diaslucia/lilhue.git
 ```
 $cd lilhue
 ```
-
 3. Instalar SASS Nodemon / Install SASS Nodemon
 ```
 $npm install node-sass nodemon
