@@ -12,7 +12,7 @@ _Lilhué was my first Web Development project. This is my friend's small busines
 
 https://cirse.netlify.app/
 
-### Herramientas / Tools 🛠️
+## Herramientas / Tools 🛠️
 
 _Estas son las herramientas que utilicé para mi proyecto_
 
